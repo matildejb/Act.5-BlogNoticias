@@ -1,35 +1,12 @@
-
 <div id="container">
-<!--formulario-->
-    <div id="form">
-      <label for="titulo">Título:</label>
-      <input id="titulo" type="text" [(ngModel)]="newNoticia.titulo"/>
+  <!--formulario-->
+ 
+    <app-form></app-form>
   
-      <label for="imagen">Añadir imagen</label>
-      <input type="url" id="imagen" [(ngModel)]="newNoticia.imagen"/>
-   
-      <label for="body">Información sobre la noticia:</label>
-      <textarea
-        id="body"
-        placeholder="Escribe aquí sobre la noticia" cols="30" rows="10" [(ngModel)]="newNoticia.body"
-      ></textarea>
-    
-      <label for="fecha">Selecciona una fecha:</label>
-      <input type="date" id="fecha" name="fecha" [(ngModel)]="newNoticia.fecha">
+
+  <!--listado-->
+
   
-    <button id="submit" (click)="getDataNew()">Añadir Noticia</button>
-  
-  </div>
-
-<!--listado-->
-  <div id="list">
-      <h2>Listado de Noticias</h2>
-      
-      <div class="news" [innerHTML]="getNoticias()">
-         <!--PINTAR DATOS-->
-      </div>
-     
-  </div>
-
-
-  </div>
+    <app-list-news></app-list-news>
+ 
+</div>

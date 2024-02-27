@@ -1,0 +1,20 @@
+<form #formNews="ngForm" (ngSubmit)="getDataNews(formNews)" >
+<!--Formulario Template-->
+      <label for="titulo">Título:</label>
+      <input id="titulo" type="text" name="titulo" ngModel />
+  
+      <label for="imagen">Añadir imagen</label>
+      <input type="url" id="imagen" name="imagen" ngModel/>
+   
+      <label for="body">Información sobre la noticia:</label>
+      <textarea
+        id="body"
+        placeholder="Escribe aquí sobre la noticia" cols="30" rows="10" name="body" ngModel
+      ></textarea>
+    
+      <label for="fecha">Selecciona una fecha:</label>
+      <input type="date" id="fecha" name="fecha" ngModel>
+  
+    <input  type="submit" id="button" value="Añadir Noticia">
+
+</form>

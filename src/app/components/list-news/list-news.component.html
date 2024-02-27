@@ -1,0 +1,10 @@
+<h2>Listado de Noticias</h2>
+<div id="list">    
+   
+   <!--PINTAR DATOS-->
+   @for (noticia of arrNoticias; track noticia.titulo){
+      <div class="news">
+      <app-new-card [miNoticia]="noticia"></app-new-card>
+   </div>
+   }
+</div>
