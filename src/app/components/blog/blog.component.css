@@ -1,6 +1,5 @@
 /*componente blog*/
 
-
 #container {
     display: flex;
     justify-content: space-around;
@@ -10,8 +9,7 @@
 #form {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
-    
+    max-width: 30%; 
 
 }
 
@@ -45,7 +43,7 @@ button {
       }
 }
 
-h1 {
+h2 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: bolder;
@@ -61,18 +59,17 @@ h1 {
     margin: 10px 5px;
     padding: 30px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    display: flex;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
 
 }
 
 .content {
     flex: 1;
     margin-right: 10px;
-}
-
-.contenido {
-    margin-top: 10px;
 }
 
 .imagenes {
@@ -86,15 +83,8 @@ h1 {
     font-size: small;
 }
 
-@media only screen and (max-width: 1200px) {
-    .news {
-       
-        display: flex;
-       flex-direction: column;
-    
-    }
-    
-}
+
+
 @media only screen and (max-width: 768px) {
     #container {
         display: flex;
@@ -115,6 +105,10 @@ h1 {
     #list {
         margin-top: 40px;
         max-width: 90%;
+    }
+
+    .news{
+        gap: 20px;
     }
 
     
